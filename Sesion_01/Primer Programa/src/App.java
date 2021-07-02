@@ -18,6 +18,7 @@ public class App {
         int edadUser = leer.nextInt();
         System.out.println(edadUser);
 
+        
         //Condicionales
         if (edadUser >= 19) {
             System.out.println("Eres mayor de edad");
