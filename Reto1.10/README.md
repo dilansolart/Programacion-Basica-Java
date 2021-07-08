@@ -11,6 +11,14 @@ Una escuela primaria desea implementar un sistema estadístico de clasificación
 |daniel|m|idiomas|3.4|
 
 Las calificaciones en la escuela se asignan con la siguiente escala de rangos:
+|**Rango de notas**|**Calificación**|
+|--|--|
+|(4.5 - 5]|Excelente|
+|(3.5 - 4.5]|Sobresaliente|
+|(2.5 - 3.5]|Regular|
+|(1 - 2.5]|Insuficiente|
+|[0 - 1]|Deficiente|
+
 
 El algoritmo debe ser capaz de responder a las siguientes preguntas:
 - ¿Cuál es el desempeño promedio de todo el grupo?
