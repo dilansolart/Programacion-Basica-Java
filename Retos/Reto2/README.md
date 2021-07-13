@@ -26,7 +26,7 @@ El algoritmo debe ser capaz de responder a las siguientes preguntas:
 - ¿Cuál   es   la   materia   con   el   peor   desempeño   promedio   para   el  géneromasculino?
 - ¿Cuál es el estudiante con el mejor desempeño para la materia historia?
 
-# FASE 1
+## **FASE 1**
 
 ## **Ejemplo**
 Para facilitar el proceso de ingreso y manipulación de los datos, los valores de tipostring se les asignará un identificador numérico único por categorías:
@@ -83,7 +83,7 @@ Para facilitar el proceso de ingreso y manipulación de los datos, los valores d
 
 Otro aspecto importante es el formato de entrada de los datos, la primera línea de laentrada se trata del número de registros que se deben leer. Las líneas de los registrostienen un formato de tabla, el orden de las columnas es: nombre, género, materia ycalificación, las columnas están separadas por un espacio. Se recomienda copiar ypegar este ejemplo en la terminal para realizar pruebas.
 
-# FASE 2
+## **FASE 2**
 
 El sistema debe implementarse utilizando el paradigma de programación orientada a objetos(POO), los requerimientos funcionales del programa son los siguientes:
 - Se debe implementar todo el procesamiento de información y cálculos en una clase llamada **SchoolGradingSystem**.
