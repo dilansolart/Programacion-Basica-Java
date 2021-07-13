@@ -8,4 +8,8 @@ Clases de Java. Mision TIC - Universidad del Norte
 * [Sesion 04 - Matrices](./Sesion_04)
 * [Sesion 05 - POO](./Sesion_05)
 
+# **Retos**
+* [Reto 1](./Retos/Reto1)
+* [Reto 2](./Retos/Reto2)
+
 
