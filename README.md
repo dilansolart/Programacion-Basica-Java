@@ -9,6 +9,7 @@ Clases de Java. Mision TIC - Universidad del Norte
 * [Sesion 04 - POO](./Sesion_04)
 * [Sesion 05 - POO_02](./Sesion_05)
 * [Sesion 06 - POO_03](./Sesion_06)
+* [Sesion 07 - POO_04](./Sesion_07)
 
 # **Retos**
 * [Reto 1](./Retos/Reto1)
