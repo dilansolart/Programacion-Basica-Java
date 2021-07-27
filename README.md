@@ -11,6 +11,8 @@ Clases de Java. Mision TIC - Universidad del Norte
 * [Sesion 06 - POO_03](./Sesion_06)
 * [Sesion 07 - POO_04](./Sesion_07)
 * [Sesion 08/Sesion 09 - POO_05 - Herencia](./Sesion_08_09)
+* [Sesion 10 - POO_06 - Review](./Sesion_10)
+
 
 
 # **Retos**
