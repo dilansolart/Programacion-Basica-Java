@@ -259,7 +259,6 @@ public class App {
 				System.out.println("el codigo digitado NO existe para prendas de vestir");
 			}
 		}
-		
 
 	}
 	
