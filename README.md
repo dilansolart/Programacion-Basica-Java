@@ -13,6 +13,7 @@ Clases de Java. Mision TIC - Universidad del Norte
 * [Sesion 08/Sesion 09 - POO_05 - Herencia](./Sesion_08_09)
 * [Sesion 10 - POO_06 - Review POO](./Sesion_10)
 * [Sesion 11 - POO_07 - Polimorfismo - Clases abstractas](./Sesion_11)
+* [Sesion 12 - POO_08 - Interfaz - Herencia Multiple](./Sesion_12)
 
 
 
