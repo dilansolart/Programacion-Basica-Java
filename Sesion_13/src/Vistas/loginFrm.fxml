@@ -44,7 +44,7 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
   <children>
-    <AnchorPane id="Password" fx:id="mensaje" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane id="Password" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
             <Label layoutX="200.0" layoutY="34.0" text="Almacen de Dilan Solar">
                <font>
@@ -61,6 +61,7 @@
             <Label layoutX="205.0" layoutY="197.0" text="Contraseña:" />
             <PasswordField fx:id="passtxt" layoutX="286.0" layoutY="193.0" promptText="Password" />
             <Button id="loginButton" fx:id="idInitBtn" layoutX="278.0" layoutY="241.0" mnemonicParsing="false" onMouseClicked="#start" text="Iniciar sesión" />
+            <Label fx:id="mensaje" layoutX="299.0" layoutY="290.0" prefHeight="17.0" prefWidth="43.0" textFill="RED" />
          </children>
     </AnchorPane>
   </children>
