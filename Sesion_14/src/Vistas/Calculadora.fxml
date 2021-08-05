@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalculatorController">
+   <children>
+      <TextField fx:id="resultText" alignment="CENTER_RIGHT" layoutX="20.0" layoutY="24.0" prefHeight="78.0" prefWidth="300.0" text="0">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </TextField>
+      <Button fx:id="boton7" layoutX="40.0" layoutY="143.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="39.0" prefWidth="52.0" text="7" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="boton8" layoutX="104.0" layoutY="143.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="39.0" prefWidth="52.0" text="8" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="boton9" layoutX="169.0" layoutY="143.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="39.0" prefWidth="52.0" text="9" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botondiv" layoutX="248.0" layoutY="143.0" mnemonicParsing="false" onAction="#addOperator" prefHeight="39.0" prefWidth="52.0" text="/" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="boton4" layoutX="40.0" layoutY="197.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="39.0" prefWidth="52.0" text="4" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="boton5" layoutX="104.0" layoutY="197.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="39.0" prefWidth="52.0" text="5" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="boton6" layoutX="169.0" layoutY="197.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="39.0" prefWidth="52.0" text="6" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonmult" layoutX="248.0" layoutY="197.0" mnemonicParsing="false" onAction="#addOperator" prefHeight="39.0" prefWidth="52.0" text="x" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="boton1" layoutX="40.0" layoutY="251.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="39.0" prefWidth="52.0" text="1" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="boton2" layoutX="104.0" layoutY="251.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="39.0" prefWidth="52.0" text="2" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="boton3" layoutX="169.0" layoutY="251.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="39.0" prefWidth="52.0" text="3" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonresta" layoutX="248.0" layoutY="251.0" mnemonicParsing="false" onAction="#addOperator" prefHeight="39.0" prefWidth="52.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonreset" layoutX="40.0" layoutY="306.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="52.0" text="C" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="boton0" layoutX="104.0" layoutY="306.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="39.0" prefWidth="52.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonigual" layoutX="169.0" layoutY="306.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="52.0" text="=" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonsuma" layoutX="248.0" layoutY="306.0" mnemonicParsing="false" onAction="#addOperator" prefHeight="39.0" prefWidth="52.0" text="+" textAlignment="CENTER">         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
