@@ -61,7 +61,7 @@
             <Label layoutX="205.0" layoutY="197.0" text="Contraseña:" />
             <PasswordField fx:id="passtxt" layoutX="286.0" layoutY="193.0" promptText="Password" />
             <Button id="loginButton" fx:id="idInitBtn" layoutX="278.0" layoutY="241.0" mnemonicParsing="false" onKeyPressed="#start" onMouseClicked="#start" text="Iniciar sesión" />
-            <Label fx:id="mensaje" layoutX="151.0" layoutY="279.0" prefHeight="44.0" prefWidth="338.0" textFill="RED" />
+            <Label fx:id="mensaje" alignment="CENTER" layoutX="32.0" layoutY="279.0" prefHeight="32.0" prefWidth="577.0" textFill="RED" />
          </children>
     </AnchorPane>
   </children>
