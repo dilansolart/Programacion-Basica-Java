@@ -6,8 +6,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class LoginController {
@@ -44,7 +44,9 @@ public class LoginController {
                     
                     Scene scene = new Scene(root);
                     Stage stage = new Stage();
-                    stage.initModality(Modality.APPLICATION_MODAL);
+                    // stage.initModality(Modality.APPLICATION_MODAL);
+                    stage.setTitle("Add Products");
+                    stage.getIcons().add(new Image("/img/favicon.png"));
                     stage.setScene(scene);
                     stage.showAndWait();
                 } catch (Exception ex) {
