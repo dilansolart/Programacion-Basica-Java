@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchoolSystemController">
+   <children>
+      <Label layoutX="63.0" layoutY="6.0" text="Sistema Estadistico de Calificaciones">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="10.0" layoutY="47.0" prefHeight="315.0" prefWidth="515.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Ingresar Dato">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="212.0" prefWidth="515.0">
+                     <children>
+                        <Label layoutX="48.0" layoutY="69.0" text="Nombre:" />
+                        <Label layoutX="48.0" layoutY="122.0" text="Materia:" />
+                        <TextField fx:id="iNombre" layoutX="106.0" layoutY="65.0" prefHeight="25.0" prefWidth="164.0" />
+                        <TextField fx:id="iMateria" layoutX="106.0" layoutY="118.0" prefHeight="25.0" prefWidth="164.0" />
+                        <Label layoutX="289.0" layoutY="69.0" text="Nota:" />
+                        <Label layoutX="289.0" layoutY="122.0" text="Genero:" />
+                        <TextField fx:id="iNota" layoutX="330.0" layoutY="65.0" prefHeight="25.0" prefWidth="87.0" />
+                        <TextField fx:id="iGenero" layoutX="342.0" layoutY="118.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button fx:id="iGuardarBtn" layoutX="232.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#guardarReg" text="Guardar" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Procesar">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="cargarBtn" layoutX="94.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#loadData" text="Cargar" />
+                        <TextArea fx:id="textDatosCargados" layoutX="39.0" layoutY="54.0" prefHeight="218.0" prefWidth="162.0" />
+                        <TextArea fx:id="outData" layoutX="314.0" layoutY="54.0" prefHeight="218.0" prefWidth="171.0" />
+                        <Button fx:id="procesarBtn" layoutX="227.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#calcularDatos" text="Procesar" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Consultar-Eliminar">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="59.0" layoutY="32.0" text="Nombre:" />
+                        <Label layoutX="59.0" layoutY="68.0" text="Materia:" />
+                        <TextField fx:id="cMateria" layoutX="128.0" layoutY="64.0" prefHeight="25.0" prefWidth="164.0" />
+                        <TextField fx:id="cNombre" layoutX="129.0" layoutY="28.0" prefHeight="25.0" prefWidth="164.0" />
+                        <Button fx:id="consultarBtn" layoutX="318.0" layoutY="64.0" mnemonicParsing="false" onMouseClicked="#consultarData" text="Consultar" />
+                        <Button fx:id="eliminarBtn" layoutX="398.0" layoutY="64.0" mnemonicParsing="false" onMouseClicked="#eliminarData" text="Eliminar" />
+                        <Separator layoutX="19.0" layoutY="120.0" prefHeight="9.0" prefWidth="477.0" />
+                        <TextArea fx:id="outAccion" layoutX="60.0" layoutY="143.0" prefHeight="126.0" prefWidth="395.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Separator layoutX="7.0" layoutY="43.0" prefHeight="5.0" prefWidth="521.0" />
+   </children>
+</Pane>

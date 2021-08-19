@@ -6,6 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -39,10 +40,11 @@ public class LoginController {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Vistas/InsertarProducto.fxml"));
                 Parent root = fxmlLoader.load();
                 Scene scene = new Scene(root);
-                Stage primaryStage = new Stage();
-                primaryStage.setTitle("D2ST");
-                primaryStage.setScene(scene);
-                primaryStage.show();
+                Stage secundStage = new Stage();
+                secundStage.setTitle("D2ST");
+                secundStage.getIcons().add(new Image("/img/favicon.png"));
+                secundStage.setScene(scene);
+                secundStage.show();
             }
         } catch (Exception e) {
             System.out.println("Error");
