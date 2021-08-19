@@ -184,12 +184,20 @@ public class SchoolSystemController extends GradingSystem {
                 String sql = "DELETE FROM Students WHERE Nombre=?";
                 PreparedStatement ps = con2.prepareStatement(sql);
                 ps.setString(1, conNombre);
-                ps.execute();
+                ResultSet rs = ps.executeQuery();
+                if (rs.next()) {
+                    elimina += rs.getString("Nombre") + ' ' + rs.getString("Genero") + ' ' + rs.getString("Materia") + ' ' + rs.getString("Nota") + "\n";
+                    outAccion.setText(elimina);
+                } else outAccion.setText("No se escontraron datos");
             } else if(conNombre.equals("") && !conMateria.equals("")) {
                 String sql = "DELETE FROM Students WHERE Materia=?";
                 PreparedStatement ps = con2.prepareStatement(sql);
                 ps.setString(1, conMateria);
-                ps.execute();
+                ResultSet rs = ps.executeQuery();
+                if (rs.next()) {
+                    elimina += rs.getString("Nombre") + ' ' + rs.getString("Genero") + ' ' + rs.getString("Materia") + ' ' + rs.getString("Nota") + "\n";
+                    outAccion.setText(elimina);
+                } else outAccion.setText("No se escontraron datos");
             }
             outAccion.setText(elimina);
         } catch (SQLException e) {
