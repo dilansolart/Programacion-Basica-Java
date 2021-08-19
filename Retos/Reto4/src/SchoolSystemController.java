@@ -24,9 +24,9 @@ public class SchoolSystemController extends GradingSystem {
     @FXML
     void guardarReg(MouseEvent event) {
         Connect conexion = new Connect();
-        String nombre = iNombre.getText();
-        String genero = iGenero.getText();
-        String materia = iMateria.getText();
+        String nombre = iNombre.getText().toLowerCase();
+        String genero = iGenero.getText().toLowerCase();
+        String materia = iMateria.getText().toLowerCase();
         float nota = Float.parseFloat(iNota.getText());
         try {
             Connection conex = conexion.connect();
@@ -137,7 +137,7 @@ public class SchoolSystemController extends GradingSystem {
         String consulta = "";
         try {
             if(!conNombre.equals("") && conMateria.equals("")) {
-                String sql = "SELECT * FROM Student WHERE Nombre=?";
+                String sql = "SELECT * FROM Students WHERE Nombre=?";
                 PreparedStatement ps = con2.prepareStatement(sql);
                 ps.setString(1, conNombre);
                 ResultSet rs = ps.executeQuery();
@@ -146,7 +146,7 @@ public class SchoolSystemController extends GradingSystem {
                     outAccion.setText(consulta);
                 }
             } else if(conNombre.equals("") && !conMateria.equals("")) {
-                String sql = "SELECT * FROM Student WHERE Materia=?";
+                String sql = "SELECT * FROM Students WHERE Materia=?";
                 PreparedStatement ps = con2.prepareStatement(sql);
                 ps.setString(1, conMateria);
                 ResultSet rs = ps.executeQuery();
@@ -162,7 +162,27 @@ public class SchoolSystemController extends GradingSystem {
 
     @FXML
     void eliminarData(MouseEvent event) {
-
+        Connect conexion = new Connect();
+        Connection con2 = conexion.connect();
+        String conNombre = cNombre.getText();
+        String conMateria = cMateria.getText();
+        String elimina = "Datos Eliminados \n";
+        try {
+            if(!conNombre.equals("") && conMateria.equals("")) {
+                String sql = "DELETE FROM Students WHERE Nombre=?";
+                PreparedStatement ps = con2.prepareStatement(sql);
+                ps.setString(1, conNombre);
+                ps.execute();
+            } else if(conNombre.equals("") && !conMateria.equals("")) {
+                String sql = "DELETE FROM Students WHERE Materia=?";
+                PreparedStatement ps = con2.prepareStatement(sql);
+                ps.setString(1, conMateria);
+                ps.execute();
+            }
+            outAccion.setText(elimina);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 
