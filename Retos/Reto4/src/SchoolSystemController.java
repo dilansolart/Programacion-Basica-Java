@@ -141,18 +141,30 @@ public class SchoolSystemController extends GradingSystem {
                 PreparedStatement ps = con2.prepareStatement(sql);
                 ps.setString(1, conNombre);
                 ResultSet rs = ps.executeQuery();
-                while(rs.next()) {
+                if (rs.next()) {
                     consulta += rs.getString("Nombre") + ' ' + rs.getString("Genero") + ' ' + rs.getString("Materia") + ' ' + rs.getString("Nota") + "\n";
                     outAccion.setText(consulta);
+                    while(rs.next()) {
+                        consulta += rs.getString("Nombre") + ' ' + rs.getString("Genero") + ' ' + rs.getString("Materia") + ' ' + rs.getString("Nota") + "\n";
+                        outAccion.setText(consulta);
+                    }
+                } else {
+                    outAccion.setText("No se escontraron datos");
                 }
             } else if(conNombre.equals("") && !conMateria.equals("")) {
                 String sql = "SELECT * FROM Students WHERE Materia=?";
                 PreparedStatement ps = con2.prepareStatement(sql);
                 ps.setString(1, conMateria);
                 ResultSet rs = ps.executeQuery();
-                while(rs.next()) {
+                if (rs.next()) {
                     consulta += rs.getString("Nombre") + ' ' + rs.getString("Genero") + ' ' + rs.getString("Materia") + ' ' + rs.getString("Nota") + "\n";
                     outAccion.setText(consulta);
+                    while(rs.next()) {
+                        consulta += rs.getString("Nombre") + ' ' + rs.getString("Genero") + ' ' + rs.getString("Materia") + ' ' + rs.getString("Nota") + "\n";
+                        outAccion.setText(consulta);
+                    }
+                } else {
+                    outAccion.setText("No se escontraron datos");
                 }
             }
         } catch (SQLException e) {
