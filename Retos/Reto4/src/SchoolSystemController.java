@@ -73,9 +73,9 @@ public class SchoolSystemController extends GradingSystem {
                             }
                         }
                     } else if (i == 2) {
-                        if (generoE.equals("m") || generoE == "0") {
+                        if (generoE.equals("m") || generoE.equals("0")) {
                             estudiantes += "0.0 ";
-                        } else if (generoE.equals("f") || generoE == "1") {
+                        } else if (generoE.equals("f") || generoE.equals("1")) {
                             estudiantes += "1.0 ";
                         }
                     } else if (i == 3) {
