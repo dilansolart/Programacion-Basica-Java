@@ -1,38 +1,39 @@
 public class GradingSystem {
-    protected Integer n;
+    protected Student [][] Estudiante;
     protected Float datos[][];
+    Student Estudiante1 = new Student ("0.0","0.0","0.0","0.0");
     
     // Metodos para cada respuesta al reto:
     public float stat1() {
         float sumExamen = 0.0f;
-        for (int i = 0; i < this.n; i++) {
-            sumExamen = sumExamen + this.datos[i][3];
+        for (int i = 0; i < Estudiante.length; i++) {
+            sumExamen += Estudiante[i][3].getNota();
         }
-        return sumExamen/this.n;
+        return sumExamen/Estudiantes.length;
     }
 
     public int stat2() {
         int cont = 0;
-        for (int i = 0; i < this.n; i++) {
-            if (this.datos[i][3] > 2.5 && this.datos[i][3] <= 3.5) cont = cont + 1;
+        for (int i = 0; i < Estudiante.length; i++) {
+            if (Estudiante[i][3].getNota() > 2.5 && Estudiante[i][3].getNota() <= 3.5) cont = cont + 1;
         }
         return cont;
     }
 
     public String stat3() {
         String matter [] = {"historia", "literatura", "biologia"}; // materias
-        int conMat[] = {0, 0, 0}, pos = 0;;
+        int conMat[] = {0, 0, 0}, pos = 0;
         Float sumMat [] = {0.0f, 0.0f, 0.0f};
-        for (int i = 0; i < this.n; i++) {
-            if (this.datos[i][1] == 0.0) { 
-                if (this.datos[i][2] == 1) {
-                    sumMat[0] = sumMat[0] + this.datos[i][3];
+        for (int i = 0; i < Estudiante.length; i++) {
+            if (Estudiante[i][1].getGenero() == 0.0) { 
+                if (Estudiante[i][2].getMateria() == 1) {
+                    sumMat[0] = sumMat[0] + Estudiante[i][3].getNota();
                     conMat[0] = conMat[0] + 1;
-                } else if (this.datos[i][2] == 2) {
-                    sumMat[1] = sumMat[1] + this.datos[i][3];
+                } else if (Estudiante[i][2].getMateria() == 2) {
+                    sumMat[1] = sumMat[1] + Estudiante[i][3].getNota();
                     conMat[1] = conMat[1] + 1;
-                } else if (this.datos[i][2] == 3) {
-                    sumMat[2] = sumMat[2] + this.datos[i][3];
+                } else if (Estudiante[i][2].getMateria() == 3) {
+                    sumMat[2] = sumMat[2] + Estudiante[i][3].getNota();
                     conMat[2] = conMat[2] + 1;
                 }
             }
@@ -50,10 +51,10 @@ public class GradingSystem {
     public String stat4() {
         String nameStudent [] = {"armando", "nicolas", "daniel", "maria", "marcela", "alexandra"}; // nombres de estudiantes
         float mayHis = 0.0f, stud = 0.0f;
-        for (int k = 0; k < this.datos.length; k++) {
-            if (this.datos[k][2] == 1.0 && this.datos[k][3] > mayHis) {
-                mayHis = this.datos[k][3];
-                stud = this.datos[k][0];
+        for (int k = 0; k < Estudiante.length; k++) {
+            if (Estudiante[k][2].getMateria() == 1.0 && Estudiante[k][3].getNota() > mayHis) {
+                mayHis = Estudiante[k][3].getNota();
+                stud = Estudiante[k][0].getNombre();
             }
             
         }
