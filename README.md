@@ -18,6 +18,8 @@ Clases de Java. Mision TIC - Universidad del Norte
 * [Sesion 14 - JavaFX - Aplicaciones GUI_2](./Sesion_14)
 * [Sesion 15 - SQLive - Bases de Datos](./Sesion_15)
 * [Sesion 16 - SQLive/JavaFX - Bases de Datos Conexiones](./Sesion_16)
+* [Sesion 17 - Pruebas Unitarias](./Sesion_17)
+
 
 
 
@@ -27,6 +29,8 @@ Clases de Java. Mision TIC - Universidad del Norte
 * [Reto 3](./Retos/Reto3)
 * [Reto 3 - GUI](./Retos/Reto3_GUI)
 * [Reto 4](./Retos/Reto4)
+* [Reto 5](./Retos/Reto5)
+
 
 
 
